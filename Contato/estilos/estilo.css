@@ -1,0 +1,164 @@
+body{
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h3{
+    font-family: Asap, sans-serif;
+    color: #fff;
+}
+
+.button {
+    background-color: #831fe0;
+    font-size: 12px;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    left: 93%;
+    top: 14%; 
+
+    border: none;
+    color: #FFFFFF;  
+    opacity: 0.6;
+    transition-duration: 0.4s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  
+/*MENU*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    padding: 0px 10%;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+    
+header{
+    flex-direction: column;
+    text-align: center;
+    background-color: #202020;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: auto;
+    margin: 3% 5%;
+    padding: 20px;
+}
+
+form h3{
+    margin: 10px;
+}
+
+form p{
+    margin: 10px;
+}
+
+form input{
+    margin: 10px;
+    width: 300px;
+
+    background: #FFFFFA;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+    font-size: 15px;
+    line-height: 20px;
+    border: 0;
+    padding: 10px 20px;
+}
+
+form textarea{
+    margin: 10px;
+    width: 300px;
+
+    background: #FFFFFA;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+    font-size: 15px;
+    line-height: 20px;
+    border: 0;
+    padding: 10px 20px;
+}
+
+form button{
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+
+    background: #000;
+    border-radius: 5px;
+    padding: 12px 48px;
+
+
+}
+
+form button:hover{
+    background: rgb(24, 24, 24);
+}
+
+
+form div h3{
+    color: #000;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav{
+            flex-direction: row;
+            justify-content: space-around;
+
+    }
+
+    nav ul{
+            flex-direction: row;
+            /*width: 100%;*/
+    }
+
+    nav ul li{
+        margin-left: 20px;
+    }
+
+
+    /*CABECALHO*/
+    header {
+        height: 40px;
+        height: 10vh;
+        justify-content: center;
+    }
+
+
+}
