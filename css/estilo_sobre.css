@@ -95,7 +95,7 @@ header{
     left: 235px;
     top: 374px;
 
-    margin-top: 10px;
+    margin-top: 100px;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
@@ -112,7 +112,7 @@ header{
     height: 220px;
    
     margin-left: 50px;
-    background-color: #E0E0E0;
+    
     border-radius: 10px;
     align-items: center;
     padding-left: 20px;
@@ -120,19 +120,86 @@ header{
 }
 
 .home {
-    width: 970px;   
+    width: 900px;   
     display: flex;
+    background-color: rgb(250, 210, 180);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(210, 170, 140);
+    margin-top: 40px;
 }
 .text_home {
     width: 400px;
 
     text-align: center;
     padding-top: 90px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
     
 }
 
-    
+.ver_dia {
+    width: 900px;  
+    height: 300px; 
+    display: flex;
+    background-color: rgb(250, 210, 180);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(210, 170, 140);
+    margin-top: 40px;
+}
 
+.text_ver_dia {
+    width: 400px;
+
+    text-align: center;
+    padding-top: 120px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
+}
+
+.ver_dia_icones img{
+    width: 400px;
+    height: 290px;
+   
+    margin-right: 50px;
+    
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+.planejar_dias {
+    width: 900px; 
+    height: 400px;   
+    
+    background-color: rgb(250, 210, 180);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(210, 170, 140);
+    margin-top: 40px;
+}
+
+.text_planejar_dias {
+    height: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
+    padding-top: 40px;
+}
+
+.planejar_dias_icones {
+    height: 300px;
+    padding-top: 10px;
+    padding-left: 65px;
+}
+
+.planejar_dias_icones img {
+    border-radius: 10px;
+    box-shadow: 0px 1px rgb(158, 157, 157);
+
+}
 @media screen and (min-width: 768px) {
 
     nav{
