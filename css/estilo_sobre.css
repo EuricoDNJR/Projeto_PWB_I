@@ -140,7 +140,7 @@ header{
 
 .ver_dia {
     width: 900px;  
-    height: 300px; 
+    height: 425px; 
     display: flex;
     background-color: rgb(250, 210, 180);
     border-radius: 10px;
@@ -151,23 +151,32 @@ header{
 
 .text_ver_dia {
     width: 400px;
-
+    margin-top: 185px;
+    margin-left: 50px;
     text-align: center;
-    padding-top: 120px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
 }
+.ver_dia_icones{
+    width: 60%;
+    text-align: center;
+}
 
-.ver_dia_icones img{
-    width: 400px;
-    height: 290px;
-   
-    margin-right: 50px;
-    
-    border-radius: 10px;
+.ver_dia_icones{
+    margin-top: 10px;
     align-items: center;
-    padding-left: 20px;
-    padding-top: 8px;
+}
+
+.ver_dia_icones p{ 
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.ver_dia_icones img{ 
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px rgb(160, 160, 160);
 }
 
 .planejar_dias {
@@ -191,14 +200,12 @@ header{
 
 .planejar_dias_icones {
     height: 300px;
-    padding-top: 10px;
-    padding-left: 65px;
 }
 
 .planejar_dias_icones img {
     border-radius: 10px;
-    box-shadow: 0px 1px rgb(158, 157, 157);
-
+    box-shadow: 0px 0px 2px 1px rgb(160, 160, 160);
+    margin-left: 80px;
 }
 @media screen and (min-width: 768px) {
 
@@ -227,3 +234,4 @@ header{
 
 
 }
+
