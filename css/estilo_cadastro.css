@@ -16,7 +16,6 @@ h3{
 }
 
 
-
   
 /*MENU*/
 
@@ -55,29 +54,89 @@ header{
 
 }
 
-form {
+form div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F2F2F2;
+    width: auto;
+    margin: 3% 5%;
+    padding: 20px;
 }
+
+form h3{
+    margin: 10px;
+}
+
+form input{
+    margin: 10px;
+    width: 300px;
+
+    background: #FFFFFA;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+    font-size: 15px;
+    line-height: 20px;
+    border: 0;
+    padding: 10px 20px;
+}
+
+form button{
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+
+    background: #000;
+    border-radius: 5px;
+    padding: 12px 48px;
+    margin: 5px;
+
+    cursor: pointer;
+}
+
+form button:hover{
+    background: rgb(24, 24, 24);
+}
+
 
 form div h3{
     color: #000;
 }
 
-.imagens {
-    width: 900px;  
-    height: 900px; 
-    display: flex;
-    margin-top: 50px;
+form p {
+    margin: 0px;
 }
 
+.lines {
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
 
-.imagens img {
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
+.lines1 {
+    width: 70px;
+    height: 1px;
     
+    padding: 0px;
+    border: 1px solid #000000;
+}
+
+form a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+
+    color: #007FFF;
 }
 
 .button {
@@ -102,7 +161,6 @@ form div h3{
   .button:hover {
       opacity: 1;
   }
-
 @media screen and (min-width: 768px) {
 
     nav{
@@ -128,9 +186,5 @@ form div h3{
         justify-content: center;
     }
 
-    .menu-home{
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
 }

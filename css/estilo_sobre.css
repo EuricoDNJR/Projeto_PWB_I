@@ -15,22 +15,7 @@ h3{
     color: #fff;
 }
 
-.button {
-    background-color: #831fe0;
-    font-size: 12px;
-    text-align: center;
-    width: 80px;
-    height: 25px;
-    left: 93%;
-    top: 14%; 
 
-    border: none;
-    color: #FFFFFF;  
-    opacity: 0.6;
-    transition-duration: 0.4s;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 
   
 /*MENU*/
@@ -99,7 +84,7 @@ header{
     text-align: center;
     font-family: Roboto;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 300px;
     font-size: 18px;
     line-height: 27px;
 
@@ -122,10 +107,10 @@ header{
 .home {
     width: 900px;   
     display: flex;
-    background-color: rgb(250, 210, 180);
+    background-color: rgb(128, 128, 128);
     border-radius: 10px;
     border: 1px solid;
-    border-color: rgb(210, 170, 140);
+    border-color: rgb(88, 88, 88);
     margin-top: 40px;
 }
 .text_home {
@@ -142,10 +127,10 @@ header{
     width: 900px;  
     height: 425px; 
     display: flex;
-    background-color: rgb(250, 210, 180);
+    background-color: rgb(128, 128, 128);
     border-radius: 10px;
     border: 1px solid;
-    border-color: rgb(210, 170, 140);
+    border-color: rgb(88, 88, 88);
     margin-top: 40px;
 }
 
@@ -183,10 +168,10 @@ header{
     width: 900px; 
     height: 400px;   
     
-    background-color: rgb(250, 210, 180);
+    background-color: rgb(128, 128, 128);
     border-radius: 10px;
     border: 1px solid;
-    border-color: rgb(210, 170, 140);
+    border-color: rgb(88, 88, 88);
     margin-top: 40px;
 }
 
@@ -207,6 +192,29 @@ header{
     box-shadow: 0px 0px 2px 1px rgb(160, 160, 160);
     margin-left: 80px;
 }
+
+.button {
+    background-color: #831fe0;
+    font-size: 12px;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    left: 93%;
+    top: 14%; 
+
+    border: none;
+    color: #FFFFFF;  
+    opacity: 0.6;
+    transition-duration: 0.4s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+  }
+
+  .button:hover {
+      opacity: 1;
+  }
 @media screen and (min-width: 768px) {
 
     nav{
