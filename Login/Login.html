@@ -10,13 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/estilo_cadastro.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/estilo_login.css">
 
     <title>Document</title>
-
 </head>
 <body>
-    <script type="text/javascript" src="../js/cookie.js"></script>   
+    <script type="text/javascript" src="../js/cookie.js"></script>       
     <nav>
         <a href="../Home/Home.html"><img class="logo" src="../img/Logo_Focus.jpg" alt=""></a>
 
@@ -25,10 +24,8 @@
             <li><a href="../Sobre/Sobre.html">Sobre</a></li>
             <li><a href="../Contato/Fale_Conosco.html">Contato</a></li>
             <li><a href="../Imagens/Imagens.html">Imagens</a></li>
-            <li><button class="button" id="botao-entrar">ENTRAR</button></li>
+            <li><a href="../Cadastro/Cadastro.html"><button class="button" id="botao-entrar" onclick="myFunction()">ENTRAR</button></a></li>
         </ul>
-
-        
 
     </nav>
 
@@ -40,24 +37,21 @@
         <form>
 
             <div id="Formulario">
-                <h3 id = "formulario_cabecalho">Cadastre-se! É de graça! E comece agora a ter uma vida mais organizada!</h3>
+                <h3 id = "formulario_cabecalho">Faça já o seu login! E aproveite!</h3>
     
                 <input type="email" name="email" id="email" placeholder="Email" required>
-                <input type="text" name="nome_de_usuario" id="nome_de_usuario" placeholder="Nome de usuario" required>
                 <input type="password" name="senha" id="senha" placeholder="Senha" required>
-                <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirmar senha" required>
     
-                <button class="botao_enviar" onclick="cadastra()">Cadastre-se</button>
+                <button class="botao_enviar" onclick="login()">Login</button>
                 <div class="lines">
                     <div class="lines1"></div>
                     <p>ou</p>
                     <div class="lines1"></div>
                 </div>
-                <a href="../Login/Login.html">Já possui conta? Entre agora mesmo!</a>
+                <a href="../Cadastro/Cadastro.html">Não tem uma conta? Cadastre-se!</a>
             </div>
         </form>
     </div>
-    
 
 </body>
 </html>
