@@ -96,6 +96,9 @@ form button{
     cursor: pointer;
 }
 
+form button a{
+    color: white;
+}
 form button:hover{
     background: rgb(24, 24, 24);
 }
@@ -125,7 +128,12 @@ form p {
     border: 1px solid #000000;
 }
 
-form a{
+.ja_possui {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ja_possui a{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;

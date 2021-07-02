@@ -15,11 +15,6 @@ function login() {
 
     var email_salvo = localStorage.getItem("email");
     var senha_salva = localStorage.getItem("senha");
-    console.log(email);
-    console.log(senha);
-
-    console.log(email_salvo);
-    console.log(senha_salva);
 
     if (email === email_salvo) {
         if (senha === senha_salva) {
