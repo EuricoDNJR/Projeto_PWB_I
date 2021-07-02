@@ -24,8 +24,10 @@ function login() {
     if (email === email_salvo) {
         if (senha === senha_salva) {
             alert("Logado!");
+        } else {
+            alert("Senha errada!");
         }
     } else {
-        alert("senha ou email incorretos!");
+        alert("Email incorreto!");
     }
 }
