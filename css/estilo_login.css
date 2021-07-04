@@ -118,6 +118,10 @@ form button{
     cursor: pointer;
 }
 
+form button a{
+    color: white;
+}
+
 form button:hover{
     background: rgb(24, 24, 24);
 }
@@ -161,6 +165,24 @@ form a{
     border: 1px solid #000000;
 }
 
+.ja_possui {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ja_possui a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+
+    color: #007FFF;
+}
 @media screen and (min-width: 768px) {
 
     nav{
