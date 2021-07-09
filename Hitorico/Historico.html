@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/estilo_historico.css">
+
+    <script type="text/javascript" src="Historico_script.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+        
+    <nav>
+        <a href="../Home/Home.html"><img class="logo" src="../img/Logo_Focus.jpg" alt=""></a>
+
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Sobre/Sobre.html">Sobre</a></li>
+            <li><a href="../Contato/Fale_Conosco.html">Contato</a></li>
+            <li><a href="../Imagens/Imagens.html">Imagens</a></li>
+            <li><button class="button" id="botao-entrar" onclick="myFunction()">ENTRAR</button></li>
+        </ul>
+
+        
+
+    </nav>
+
+    <header>
+        <h3>CONJUNTO DE FERRAMENTAS PARA PLANEJAMENTO E ORGANIZAÇÃO PESSOAL</h3>
+    </header>
+
+    <div id="conteudo">
+        <div class = "data">
+            <select name="opcoes" id="senhoridade">
+                <option selected disabled value=0>Escolha Data</option>
+                <option value=1>Hoje</option>
+                <option value=2>Ultimo 2 dias</option>
+                <option value=3>Ultimo 3 dias</option>
+                <option value=4>Ultimo 4 dias</option>
+            </select>
+            <input class="atualizar_buton" type="button" value="Atualizar" onclick="historico()">
+            
+        </div>
+
+        <div class = 'bloco-da-tabela'>
+            <table id="table" class="content-table">
+              <thead>
+                <tr>
+                  <th>Atividade</th>
+                  <th>Inicia</th>
+                  <th>Finaliza</th>
+                  <th>Tempo Total</th>
+                  <th>Data de Termino</th>
+                </tr>
+              </thead>
+
+            </table>
+        </div>
+    </div>
+
+</body>

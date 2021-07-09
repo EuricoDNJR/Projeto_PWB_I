@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/estilo_ver_dia.css">
+
+    <script type="text/javascript" src="Ver_Dia_JS.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+        
+    <nav>
+        <a href="../Home/Home.html"><img class="logo" src="../img/Logo_Focus.jpg" alt=""></a>
+
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Sobre/Sobre.html">Sobre</a></li>
+            <li><a href="../Contato/Fale_Conosco.html">Contato</a></li>
+            <li><a href="../Imagens/Imagens.html">Imagens</a></li>
+            <li><button class="button" id="botao-entrar" onclick="myFunction()">ENTRAR</button></li>
+        </ul>
+
+    </nav>
+
+    <header>
+        <h3>CONJUNTO DE FERRAMENTAS PARA PLANEJAMENTO E ORGANIZAÇÃO PESSOAL</h3>
+    </header>
+
+    <div id="conteudo">
+
+        <div id="grafico_de_pizza">
+            <canvas id="graficoDePizza"></canvas>
+        </div>
+
+        <input class="atualizar_buton" type="button" value="Atualizar" onclick="atualizando_grafico()">
+
+        <div class = 'bloco-da-tabela'>
+            <table id="table" class="content-table">
+              <thead>
+                <tr>
+                  <th>Atividade</th>
+                  <th>Inicia</th>
+                  <th>Finaliza</th>
+                  <th>Tempo Total</th>
+                  <th>Feito</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Revisão</td>
+                  <td>10:30</td>
+                  <td>11:30</td>
+                  <td>01:00</td>
+                  <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                </tr>
+                <tr>
+                    <td>Exercicio Fisico</td>
+                    <td>09:10</td>
+                    <td>09:40</td>
+                    <td>00:30</td>
+                    <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                </tr>
+                <tr>
+                    <td>Estudar Para PWeb</td>
+                    <td>17:35</td>
+                    <td>19:10</td>
+                    <td>1:35</td>
+                    <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                </tr>
+                <tr>
+                    <td>Prova de POO</td>
+                    <td>15:23</td>
+                    <td>17:23</td>
+                    <td>02:00</td>
+                    <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                </tr>
+                <tr>
+                    <td>Revisão</td>
+                    <td>10:30</td>
+                    <td>11:30</td>
+                    <td>01:00</td>
+                    <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                  </tr>
+                  <tr>
+                      <td>Exercicio Fisico</td>
+                      <td>09:10</td>
+                      <td>09:40</td>
+                      <td>00:30</td>
+                      <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                  </tr>
+                  <tr>
+                      <td>Estudar Para PWeb</td>
+                      <td>17:35</td>
+                      <td>19:10</td>
+                      <td>1:35</td>
+                      <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                  </tr>
+                  <tr>
+                      <td>Prova de POO</td>
+                      <td>15:23</td>
+                      <td>17:23</td>
+                      <td>02:00</td>
+                      <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                  </tr>
+                  <tr>
+                    <td>Revisão</td>
+                    <td>10:30</td>
+                    <td>11:30</td>
+                    <td>01:00</td>
+                    <td><input type="checkbox" if="tecnologia1" name="feito" value='1'></td>
+                  </tr>
+                  <tr>
+                      <td>Exercicio Fisico</td>
+                      <td>09:10</td>
+                      <td>09:40</td>
+                      <td>00:30</td>
+                      <td><input type="checkbox" if="tecnologia1" name="feito" value="1"></td>
+                  </tr>
+              </tbody>
+
+            </table>
+        </div>
+
+        <script>
+            grafico_de_pizza()
+        </script>
+
+</body>
+</html>

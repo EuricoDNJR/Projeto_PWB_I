@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/estilo_progreco.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+        
+    <nav>
+        <a href="../Home/Home.html"><img class="logo" src="../img/Logo_Focus.jpg" alt=""></a>
+
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Sobre/Sobre.html">Sobre</a></li>
+            <li><a href="../Contato/Fale_Conosco.html">Contato</a></li>
+            <li><a href="../Imagens/Imagens.html">Imagens</a></li>
+            <li><button class="button" id="botao-entrar" onclick="myFunction()">ENTRAR</button></li>
+        </ul>
+
+        
+
+    </nav>
+
+    <header>
+        <h3>CONJUNTO DE FERRAMENTAS PARA PLANEJAMENTO E ORGANIZAÇÃO PESSOAL</h3>
+    </header>
+
+    <div id='conteudo'>
+        <script src="Graficos.js"></script>
+        <div id="conjunto_de_graficos">
+            <div id="grafico_de_barras">
+                <h2>Quantidade de atividades feitas nos ultimos 7 dias:</h2>
+                <canvas id="graficoDeBarras"></canvas>
+            </div>
+            <div id="grafico_de_pizza">
+                <h2>Total de tarefas feitas ate o momento:</h2>
+                <canvas id="graficoDePizza"></canvas>
+            </div>
+        </div>
+
+
+        <div id="grafico_linhas">
+            <h2>Evolução na quantidade de realização de tarefas dentro de um intervalo de tempo:</h2>
+            <div id="Opcoes_Grafico_de_Linhas">
+                <select name="opcoes" id="data_graficos_de_linhas">
+                    <option value=1>Ultimo 5 dias</option>
+                    <option value=2>Ultimo 6 dias</option>
+                    <option value=3>Ultimo 7 dias</option>
+                </select>
+                <input class="atualizar_buton" type="button" value="Atualizar" onclick="updateConfigAsNewObject()">
+            </div>
+            <div id = "Grafico_de_Linhas">
+                <canvas id="grafico_de_linhas"></canvas>
+            </div>
+        </div>
+
+        <script>
+            grafico_linhas();
+            grafico_de_barras();
+            grafico_de_pizza();
+        </script>
+    </div>
+
+</body>
+</html>
