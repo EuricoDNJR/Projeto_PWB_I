@@ -66,10 +66,17 @@ form div h3{
 }
 
 .imagens {
-    width: 900px;  
-    height: 900px; 
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
+}
+
+.imagens div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -121,6 +128,14 @@ form div h3{
     margin-top: 20px;
     margin-bottom: 20px;     
 }
+
+@media screen and (min-width: 920px) {
+    .imagens div{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     nav{
