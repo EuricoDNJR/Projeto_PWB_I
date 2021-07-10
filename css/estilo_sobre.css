@@ -73,10 +73,22 @@ header{
     color: #000000;
 }
 
+#conteudo{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
 .text_about {
     
-    width: 970px;
-    height: 86px;
+    width: auto;
+    height: auto;
     left: 235px;
     top: 374px;
 
@@ -92,63 +104,80 @@ header{
 
 }
 
-.home_icones {
-    width: 400px;
-    height: 220px;
-   
-    margin-left: 50px;
-    
-    border-radius: 10px;
-    align-items: center;
-    padding-left: 20px;
-    padding-top: 8px;
-}
-
-.home {
-    width: 900px;   
+.home { 
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(128, 128, 128);
     border-radius: 10px;
     border: 1px solid;
     border-color: rgb(88, 88, 88);
     margin-top: 40px;
 }
+
+.home_icones {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: auto;
+   
+    margin: 10px;
+    
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+    padding-top: 8px;
+}
+
+.home_icones img{
+    width: 300px;
+}
+
 .text_home {
-    width: 400px;
+    width: auto;
 
     text-align: center;
-    padding-top: 90px;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin: 15px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
     
 }
 
 .ver_dia {
-    width: 900px;  
-    height: 425px; 
+    width: auto;  
+    height: auto; 
     display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
     background-color: rgb(128, 128, 128);
     border-radius: 10px;
     border: 1px solid;
     border-color: rgb(88, 88, 88);
     margin-top: 40px;
+    padding: auto;
 }
 
 .text_ver_dia {
-    width: 400px;
-    margin-top: 185px;
-    margin-left: 50px;
+    width: auto;
+    
     text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
+    margin: 15px;
 }
 .ver_dia_icones{
-    width: 60%;
+    max-width: 450px;
+
+    min-width: 200px;
     text-align: center;
 }
 
 .ver_dia_icones{
-    margin-top: 10px;
     align-items: center;
 }
 
@@ -165,32 +194,45 @@ header{
 }
 
 .planejar_dias {
-    width: 900px; 
-    height: 400px;   
-    
+    max-width: 900px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
     background-color: rgb(128, 128, 128);
     border-radius: 10px;
     border: 1px solid;
     border-color: rgb(88, 88, 88);
     margin-top: 40px;
+    padding: auto;
 }
 
 .text_planejar_dias {
-    height: 100px;
+    height: auto;
     text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
-    padding-top: 40px;
+    padding: 40px;
 }
 
 .planejar_dias_icones {
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 70%;
+
+    max-width: 450px;
+    min-width: 200px;
+    text-align: center;
 }
 
 .planejar_dias_icones img {
+    max-width: 300px;
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 2px 1px rgb(160, 160, 160);
-    margin-left: 80px;
+
 }
 
 .button {
@@ -234,6 +276,7 @@ header{
     margin-top: 20px;
     margin-bottom: 20px;     
 }
+
 @media screen and (min-width: 768px) {
 
     nav{
@@ -259,6 +302,29 @@ header{
         justify-content: center;
     }
 
+    .ver_dia{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .home{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /*
+
+    .planejar_dias_icones{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    */
+
+    .planejar_dias{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
 }
 
