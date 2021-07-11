@@ -92,7 +92,7 @@ var labels = [
 var data = {
     labels: labels,
     datasets: [{
-        label: 'Atividade Feiras no Dia',
+        label: 'Atividade Feitas no Dia',
         backgroundColor: '#007FFF',
         borderColor: '#007FFF',
         color: '#007FFF',
@@ -151,7 +151,7 @@ function updateConfigAsNewObject() {
         var data = {
             labels: labels,
             datasets: [{
-                label: 'Atividade Feiras no Dia',
+                label: 'Atividade Feitas no Dia',
                 backgroundColor: '#007FFF',
                 borderColor: '#007FFF',
                 color: '#007FFF',
@@ -171,7 +171,7 @@ function updateConfigAsNewObject() {
         var data = {
             labels: labels,
             datasets: [{
-                label: 'Atividade Feiras no Dia',
+                label: 'Atividade Feitas no Dia',
                 backgroundColor: '#007FFF',
                 borderColor: '#007FFF',
                 color: '#007FFF',
@@ -192,7 +192,7 @@ function updateConfigAsNewObject() {
         var data = {
             labels: labels,
             datasets: [{
-                label: 'Atividade Feiras no Dia',
+                label: 'Atividade Feitas no Dia',
                 backgroundColor: '#007FFF',
                 borderColor: '#007FFF',
                 color: '#007FFF',
