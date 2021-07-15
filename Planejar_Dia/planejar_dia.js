@@ -10,10 +10,10 @@ function cadAtividade(){
     var cellFInaliza = linha.insertCell(2);
     var cellData = linha.insertCell(3);
 
-    atividade = document.getElementById("nome_da_atividad").value;
-    inicia = document.getElementById("inicio_atividade").value;
-    finaliza = document.getElementById("fim_atividade").value;
-    data_in = document.getElementById("data_dia").value;
+    var atividade = document.getElementById("nome_da_atividad").value;
+    var inicia = document.getElementById("inicio_atividade").value;
+    var finaliza = document.getElementById("fim_atividade").value;
+    var data_in = document.getElementById("data_dia").value;
 
     cellAtividade.innerHTML = atividade;
     cellInicia.innerHTML = inicia;
@@ -26,10 +26,10 @@ function cadAtividade(){
 
 function alPessoa(){
 
-    atividade = document.getElementById("nome_da_atividad").value;
-    inicia = document.getElementById("inicio_atividade").value;
-    finaliza = document.getElementById("fim_atividade").value;
-    data_in = document.getElementById("data_dia").value;
+    var atividade = document.getElementById("nome_da_atividad").value;
+    var inicia = document.getElementById("inicio_atividade").value;
+    var finaliza = document.getElementById("fim_atividade").value;
+    var data_in = document.getElementById("data_dia").value;
 
     tb.rows[index].cells[0].innerHTML = atividade;
     tb.rows[index].cells[1].innerHTML = inicia;
@@ -46,7 +46,7 @@ function preenchCamposForm(){
             document.getElementById("inicio_atividade").value = tb.rows[index].cells[1].innerText;
             document.getElementById("fim_atividade").value = tb.rows[index].cells[2].innerText;
             document.getElementById("data_dia").value = tb.rows[index].cells[3].innerText;
-        } 
+        }; 
     }
 }
 

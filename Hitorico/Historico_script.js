@@ -1,5 +1,5 @@
-var tb, index, qtdLinhas;
-var atividade,inicia,finaliza,total,pontos,data_in;
+var tb;
+var atividade,inicia,finaliza,total,data_in;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -56,7 +56,7 @@ function historico(){
     total = ["1:00", "00:30", "1:35", "2:00"];
     data_in = ["07/07/2021","06/07/2021","05/07/2021","04/07/2021"];
 
-    for(var i = 0; i < data; i++){
+    for(i = 0; i < data; i++){
         cadPessoa(atividade[i],inicia[i],finaliza[i],total[i],data_in[i]);
     }
     

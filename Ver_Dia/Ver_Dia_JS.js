@@ -5,8 +5,7 @@ var quantidade_de_atividades, feitas;
 function atualizando_feitas_qnt_atividades(){
     var tb = document.getElementById("table");
 
-    index = this.rowsIndex;
-    const checkboxes = document.querySelectorAll('input[name="feito"]:checked');;
+    const checkboxes = document.querySelectorAll('input[name="feito"]:checked');
 
     let colors = [];
 

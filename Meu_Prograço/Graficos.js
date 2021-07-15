@@ -48,7 +48,7 @@ function grafico_de_barras() {
         },
       };
 
-    chart_barra = new Chart(
+    var chart_barra = new Chart(
         document.getElementById('graficoDeBarras'),
         config
     );
@@ -75,13 +75,13 @@ function grafico_de_pizza() {
         type: 'doughnut',
         data: data,
       };
-    chart_barra = new Chart(
+    var chart_barra = new Chart(
         document.getElementById('graficoDePizza'),
         config
     );
 }
 
-var opcoes = document.getElementById('grafico_de_linhas')
+
 var labels = [
     '07/07',
     '08/07',
@@ -105,7 +105,7 @@ var config = {
     options: {}
 };
 
-var chart
+var chart;
 
 function grafico_linhas() {
     chart = new Chart(
@@ -114,41 +114,19 @@ function grafico_linhas() {
     );
 }
 
-function Adicionar_Dados(){
-
-    var label = ['Carro'];
-    var data = [20];
-
-    
-
-    chart.data.labels.push(label);
-    chart.data.datasets.forEach((dataset) => {
-        dataset.data.push(data);
-    });
-
-    chart.update();
-}
-
-function Remover_Dados() {
-    chart.data.labels.pop();
-    chart.data.datasets.forEach((dataset) => {
-        dataset.data.pop();
-    });
-    chart.update();
-}
-
 function updateConfigAsNewObject() {
-    
+    var labels = [];
+    var data = {};
     var quant_dias = document.getElementById('data_graficos_de_linhas').value;
     if(quant_dias === '1'){
-        var labels = [
+        labels = [
             '07/07',
             '08/07',
             '09/07',
             '10/07',
             '11/08'
         ];
-        var data = {
+        data = {
             labels: labels,
             datasets: [{
                 label: 'Atividade Feitas no Dia',
@@ -160,7 +138,7 @@ function updateConfigAsNewObject() {
         };
 
     }else if(quant_dias === '2'){
-        var labels = [
+        labels = [
             '06/07',
             '07/07',
             '08/07',
@@ -168,7 +146,7 @@ function updateConfigAsNewObject() {
             '10/07',
             '11/08'
         ];
-        var data = {
+        data = {
             labels: labels,
             datasets: [{
                 label: 'Atividade Feitas no Dia',
@@ -180,7 +158,7 @@ function updateConfigAsNewObject() {
         };
 
     }else if(quant_dias === '3'){
-        var labels = [
+        labels = [
             '05/07',
             '06/07',
             '07/07',
@@ -189,7 +167,7 @@ function updateConfigAsNewObject() {
             '10/07',
             '11/08'
         ];
-        var data = {
+        data = {
             labels: labels,
             datasets: [{
                 label: 'Atividade Feitas no Dia',
